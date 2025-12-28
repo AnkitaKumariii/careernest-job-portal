@@ -28,7 +28,7 @@ const Home = () => {
     };
 
     React.useEffect(() => {
-        fetch('http://localhost:5000/api/test')
+        fetch('https://careernest-job-portal.onrender.com/api/test')
             .then(res => res.json())
             .then(data => setBackendStatus(data.message))
             .catch(() => setBackendStatus('Backend not connected'));
